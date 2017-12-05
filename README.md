@@ -15,9 +15,9 @@ En este reto, vamos a replicar el tablero de **Trello** como se muestra en la si
 
 1. Nuestra web esta conformada por *2 secciones* de base que se van incrementando dinamicamente con JS conforme vamos ingresando información:
 
-1. *El Nav*: Sección donde se encuentra el menú de Tableros, input de busqueda, y el nombre del programa en la parte central. Y del lado izquierdo se encuentran 4 secciones pequeñas ilustradas con iconos y una imagen del perfil del usuario. Esta sección solo tiene estilos con CSS no cuenta con ninguna funcionalidad por el momento.
+  i. *El Nav*: Sección donde se encuentra el menú de Tableros, input de busqueda, y el nombre del programa en la parte central. Y del lado izquierdo se encuentran 4 secciones pequeñas ilustradas con iconos y una imagen del perfil del usuario. Esta sección solo tiene estilos con CSS no cuenta con ninguna funcionalidad por el momento.
 
-2. *La sección 2¨*: Esta sección tiene un contenedor en donde podemos ir ingresando elementos en forma de lista dinamicamente y podemos ir agragando otros contenedores con otras listas adentro, todo esto a traves de *JS*.  
+  ii. *La sección 2¨*: Esta sección tiene un contenedor en donde podemos ir ingresando elementos en forma de lista dinamicamente y podemos ir agragando otros contenedores con otras listas adentro, todo esto a traves de *JS*.  
 
 
 ## Diagrama de Flujo
