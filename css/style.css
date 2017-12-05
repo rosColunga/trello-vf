@@ -1,0 +1,295 @@
+/* ++Se muestran elementos en orden de tags > id's > classes, por orden alfabético++ */
+
+/*Removiendo outline del documento con selctor universal */
+*:focus {
+  outline: none;
+}
+/*Especificaciones generales de interfaz*/
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1D8DC2;
+}
+/*Menú a la derecha*/
+div.right {
+  display: inline-block;
+  float: right;
+  overflow: hidden;
+  padding-top: 30px;
+}
+/*Definiendo color de icono*/
+i.fa {
+	color: #FFFF;
+}
+/*Ajustando título del tablero*/
+i.title-board {
+  margin-left: 15px;
+}
+/*Agregando imagen logo dentro del nav*/
+img.logo {
+  width: 8%;
+  display: inline-block;
+  margin-top: 8px;
+	margin-left: 12%;
+}
+/*Entrada de texto*/
+input#list {
+  width: 90%
+}
+/*posición de parrafos*/
+p, span {
+	padding: 10px 9px;
+}
+/*Definiendo caracteristicas de fuente*/
+.private {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFF;
+  display: inline-block;
+}
+/*Peso de la fuente*/
+span {
+  font-weight: 800;
+}
+/*Peso fuente de spans*/
+span#addList {
+  font-weight: 400;
+}
+/*Colocando primera sección*/
+section#principal {
+	margin: 0 5px;
+	padding: 5px;
+}
+/*Posicionando lista*/
+ul li {
+	position: relative;
+	bottom: 7px;
+	clear: both;
+	display: inline-block;
+}
+/*Posición de botones*/
+#big-buttons {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+/*Definiendo estilo de boards*/
+#boards {
+  background: #66A4C7;
+	color: #FFFF;
+	font-weight: 600;
+	text-align: right;
+  border-radius: 3px;
+  display: inline-block;
+  height: 30px;
+  width: 115px;
+	border: none;
+  /*Efecto de tiempo de transición con un inicio y un final lentos entre interacciones*/
+	transition: all .3s ease-in-out;
+}
+/*Interacción con el cursor*/
+#boards:hover,
+#search:hover,
+.small-icon:hover {
+	background: #3386B5;
+	cursor: pointer;
+}
+/*Estilo de boton*/
+#button {
+  background: #56A43F;
+  color: #FFFF;
+  font-weight: 700;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+	text-align: right;
+  /*Efecto de tiempo de transición con un inicio y un final lentos entre interacciones*/
+  transition: all .5s ease-in-out;
+}
+/*Interacción del boton con el cursor*/
+#button:hover {
+  background: #4e9134;
+}
+/*Caracteristicas de contenedor*/
+#container {
+  width: 305px;
+  height: auto;
+  border-radius: 3px;
+  background: #E2E4E6;
+}
+/*Caracteristicas de navegador*/
+#container-navbar {
+  background: #147AA7;
+  height: 50px;
+  text-align: center;
+}
+/*Definiendo listas*/
+#list {
+  width: 250px;
+  margin: 10px;
+  border-radius: 3px;
+  background: #FFFF;
+  padding: 0 5px 10px 0;
+  font-size: 16px;
+}
+/*Posición y estilo photo*/
+#photo {
+	position: relative;
+	bottom: 9px;
+	right: 30px;
+  border-radius: 50%;
+	width: 29px;
+	height: 29px;
+	text-decoration: none;
+	display: inline-block;
+  /*Efecto de tiempo de transición con un inicio y un final lentos entre interacciones*/
+	transition: all .3s ease-in-out;
+}
+/*Estilo de photo de interacción con el cursor*/
+#photo:hover {
+	opacity: .8;
+}
+/*Flotando botones*/
+#right-buttons {
+  float: right;
+	overflow: hidden;
+}
+/*Estilo de buscador*/
+#search {
+	background: #66A4C7;
+	border-radius: 3px;
+	display: inline-block;
+	text-align: right;
+	color: #FFFF;
+	height: 28px;
+	width: 180px;
+  margin-left: 7px;
+	border: none;
+  /*Efecto de tiempo de transición con un inicio y un final lentos entre interacciones*/
+	transition: all .3s ease-in-out;
+}
+/* Lista Off*/
+.addOff {
+  width: 200px;
+  height: 30px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 16px;
+  background: #C6567E;
+  display: none;
+}
+/*Añadir una Lista*/
+.addOn {
+  background: #147AA7;
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  width: 200px;
+  height: 30px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+/*Definiendo caracteristicas del area de texto*/
+.areaText {
+  margin-left: 10px;
+  margin-top: 5px;
+  display: block;
+  font-size: 14px;
+  background: #FFFF;
+  width: 90%;
+}
+/*Estilo de boton*/
+.bttn {
+	background: #56A43F;
+	color: #FFFF;
+	font-weight: 700;
+	padding: 5px;
+	margin: 10px;
+	border-radius: 5px;
+}
+/* Botón desactivado*/
+.buttonOff {
+  margin-left: 10px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #fff;
+  background-color: #A5E0FC;
+  display: none;
+}
+/*Fuente de contenedor*/
+.contenedor {
+  font-size: 14px;
+}
+/*Flotando en linea*/
+.inline {
+  display: inline-block;
+  float: left;
+}
+/*Definiendo dimensiones y estilo de clase link*/
+.link {
+  padding: 4px;
+  margin: 4px;
+  width: 92%;
+  font-size: 16px;
+  background: #C4C9CC;
+}
+/*Lista activa*/
+.listOn {
+  background: red;
+  width: 303px;
+  margin: 10px;
+	border-radius: 3px;
+  background: #E2E4E6;
+  overflow: hidden;
+}
+/*Lista Desactivada*/
+.listOff {
+  background: #ddd;
+  width: 200px;
+  margin-left: 10px;
+	margin-top: 30px;
+  display: none;
+  overflow: hidden;
+}
+/*Tajertas ocultas*/
+.newLinkTarjetaOff {
+  display: none;
+  font-size: 16px;
+}
+/*Formato iconos en nav*/
+.small-icon {
+	background: #66A4C7;
+	position: relative;
+	right: 30px;
+	bottom: 9px;
+	width: 25px;
+	height: 25px;
+  display: inline-block;
+	vertical-align: middle;
+	margin-left: 3px;
+	padding: 3px;
+	border-radius: 3px;
+  /*Efecto de tiempo de transición con un inicio y un final lentos entre interacciones*/
+	transition: all .3s ease-in-out;
+}
+/*Título tablero*/
+.title-board {
+  color: #FFFF;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 21px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+/*Area de texto desactivada*/
+.textAreaOff {
+  margin-left: 0;
+  margin-top: 0;
+  font-size: 14px;
+  display: none;
+	background: green;
+  box-sizing: content-box;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--El idioma de la página web-->
+<html lang="es">
+
+<head>
+  <!--El tipo de carácteres-->
+  <meta charset="UTF-8">
+  <!--Se sincroniza el archivo css-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--Se vincula la topografía-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+  <!--El título de la página web-->
+  <title>Trello</title>
+</head>
+
+<body>
+  <!--Se añade el menú de navegación-->
+  <nav>
+    <div id="container-navbar">
+      <!--Se coloca el logo de Trello-->
+      <img class="logo" src="assets/images/trello-logo.png" alt="trello.logo">
+      <!--Se crea el container de los botones grandes -->
+      <div id="big-buttons">
+        <!--Se crea el botón de los tableros -->
+        <input type="button" id="boards" value="Tableros"></span>
+        <!--Se crea el botón de búsqueda-->
+        <input type="text" id="search" value=""> <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+      <!--Se crea el container de los botones pequeños -->
+      <div id="right-buttons">
+        <!--Se crean los botones pequeños-->
+        <ul>
+          <li class="small-icon"><i class="fa fa-plus" aria-hidden="true"></i></li>
+          <li class="small-icon"><i class="fa fa-info" aria-hidden="true"></i></li>
+          <li class="small-icon"><i class="fa fa-bell-o" aria-hidden="true"></i></li>
+          <img class="small-icon" id="photo" src="assets/images/profile.png" alt="">
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <body>
+
+    <!--Menú de tablero-->
+    <div class="title-board">Tablero - Reto de código</div>
+    <i class="fa fa-star-o title-board" aria-hidden="true"></i>
+    <i class="fa fa-lock title-board" aria-hidden="true"></i>
+    <p class="private">Privado</p>
+    <div class="right">
+      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+      <a class="private">Mostrar menú</a>
+    </div>
+    <!--Aquí deberían de ir los iconos, el privado y el mostrar menú -->
+
+    <!--Contenedor de sección principal-->
+    <section id="principal">
+      <section id="formBox" class="inline">
+        <div class="formulario">
+
+          <!--Caja de primer click-->
+          <div id="boxList" class="addOn">
+            <span id="addList">Añadir una Lista...</span>
+          </div>
+
+          <!--Input que será activado al click-->
+          <div id="container" class="listOff">
+            <div>
+              <input type="text" id="list" placeholder="Añadir una lista...">
+            </div>
+            <div>
+              <button id="button" class="boton" type="button">Guardar</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </section>
+
+
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+
+</html>
